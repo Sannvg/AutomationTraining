@@ -3,6 +3,7 @@
 <suite name="RestaurantSuite">
 	<listeners>
 		<listener class-name="com.POS.Utilities.Listeners"></listener>
+		<listener class-name="com.POS.Utilities.RetryAnalyzerListener"></listener>
 	</listeners>
 	<parameter name="Browser" value="Chrome"></parameter>
 	<test thread-count="5" name="TestRun">

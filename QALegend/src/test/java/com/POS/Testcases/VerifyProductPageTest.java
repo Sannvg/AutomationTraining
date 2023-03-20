@@ -141,8 +141,8 @@ public class VerifyProductPageTest extends BaseClass {
 		act.type(objAddPdt.txtPdtOptions(), (String) excelData.get(11));
 		act.type(objAddPdt.pdtImageInput(), System.getProperty("user.dir") + "\\Files\\TestPdt.jpg");
 		act.type(objAddPdt.txtPdtDesc(), (String) excelData.get(12));
-		act.click1(objAddPdt.btnPdtSubmit(), "Add Product Submit");
-		act.fluentWait(getDriver(), objPdt.txtSearchPdt(), 5);
+		act.click1(objAddPdt.btnPdtSubmit(), "Add Product Submit");	
+		act.click1(objPdt.txtSearchPdt(), "Search Product");
 		act.type(objPdt.txtSearchPdt(), (String) excelData.get(0));
 		int tblRowCnt = act.getRowCount(objPdt.tableProduct());
 		Assert.assertTrue(tblRowCnt > 0, "Product is added");
@@ -151,12 +151,14 @@ public class VerifyProductPageTest extends BaseClass {
 	}
 
 	@Test(priority = 9)
-	public void validateSearchPdt() {
+	public void validateSearchPdt() throws Exception {
 		Log.startTestCase("VerifyProductPageTest--validateSearchPdt");
 		objLogin.loginFn();
 		act.click1(objHome.menuPdt(), "Product Menu");
 		act.click1(objPdt.txtSearchPdt(), "Search Product");
-		act.type(objPdt.txtSearchPdt(), "OBS");
+		ExcelRead data = new ExcelRead();
+		ArrayList excelData = data.getData("Product");
+		act.type(objPdt.txtSearchPdt(), (String) excelData.get(2));
 		Log.info("Search product entered");
 		int tblRowCnt = act.getRowCount(objPdt.tableProduct());
 		Assert.assertTrue(tblRowCnt > 0, "Search Product is displayed");

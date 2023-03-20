@@ -1,21 +1,25 @@
 package com.POS.Testcases;
 
+import java.util.ArrayList;
+
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.POS.BaseClass.BaseClass;
+import com.POS.Utilities.ExcelRead;
 import com.POS.Utilities.Log;
 
 public class VerifyStoreManageTest extends BaseClass {
-
-	@Parameters({ "ZoneName" })
+	
 	@Test(priority = 1)
-	public void validateAddZone(String strNm) {
+	public void validateAddZone() throws Exception {
 		Log.startTestCase("VerifyStoreManageTest-validateAddZone");
 		objMngStore.beforefn();
 		act.click1(objMngStore.btnaddZone(), "Add Zone");
 		act.click1(objMngStore.AddZoneName(), "Zone Name");
-		act.type(objMngStore.AddZoneName(), strNm);
+		ExcelRead data = new ExcelRead();
+		ArrayList excelData = data.getData("Zone");
+		act.type(objMngStore.AddZoneName(), (String) excelData.get(0));
 		Log.info("Entered Zone");
 		act.click1(objMngStore.addZoneSubmit(), "Add Zone Submit");
 		Assert.assertEquals(objMngStore.lblStoreZone().getText(), "Store Zones");
@@ -24,12 +28,14 @@ public class VerifyStoreManageTest extends BaseClass {
 	}
 
 	@Test(priority = 2)
-	public void validateEditZone() {
+	public void validateEditZone() throws Exception {
 		Log.startTestCase("VerifyStoreManageTest-validateEditZone");
 		objMngStore.beforefn();
 		act.click1(objMngStore.btnEditZone(), "Edit Zone");
+		ExcelRead data = new ExcelRead();
+		ArrayList excelData = data.getData("EZone");
 		act.click1(objMngStore.editZoneName(), "Edit Zone Name");
-		act.type(objMngStore.editZoneName(), "OBS Zone");
+		act.type(objMngStore.editZoneName(), (String) excelData.get(0));
 		Log.info("Edited Zone");
 		act.click1(objMngStore.editZoneSubmit(), "Edit Zone Submit");
 		Assert.assertEquals(objMngStore.lblStoreZone().getText(), "Store Zones");
@@ -37,16 +43,17 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("VerifyStoreManageTest-validateEditZone");
 	}
 
-	@Parameters({ "StoreTblNm" })
 	@Test(priority = 3)
-	public void validateAddStoreTable(String strTblNm) {
+	public void validateAddStoreTable(String strTblNm) throws Exception {
 		Log.startTestCase("VerifyStoreManageTest-validateAddStoreTable");
 		objMngStore.beforefn();
 		act.click1(objMngStore.btnaddStoreTable(), "Add Store Table");
+		ExcelRead data = new ExcelRead();
+		ArrayList excelData = data.getData("StoreTable");
 		act.click1(objMngStore.txtAddStoreTblNm(), "Store Table Name");
-		act.type(objMngStore.txtAddStoreTblNm(), strTblNm);
+		act.type(objMngStore.txtAddStoreTblNm(), (String) excelData.get(0));
 		Log.info("Entered table name");
-		act.selectByVisibleText("OBS Zone", objMngStore.drpAddStoreZone());
+		act.selectByVisibleText((String) excelData.get(1), objMngStore.drpAddStoreZone());
 		Log.info("Selected zone");
 		act.click1(objMngStore.btnAddStoreTblSubmit(), "Add Store Table Submit");
 		Log.info("Store Table is Added");
@@ -56,11 +63,12 @@ public class VerifyStoreManageTest extends BaseClass {
 	}
 
 	@Test(priority = 4)
-	public void validateEditStoreTable() {
+	public void validateEditStoreTable() throws Exception {
 		Log.startTestCase("VerifyStoreManageTest-validateEditStoreTable");
-		objMngStore.beforefn();
+		objMngStore.beforefn();ExcelRead data = new ExcelRead();
+		ArrayList excelData = data.getData("EStoreTable");
 		act.click1(objMngStore.btnStrTblEdit(), "Store Table Edit");
-		act.type(objMngStore.txtAddStoreTblNm(), "OBS Store Tbl");
+		act.type(objMngStore.txtAddStoreTblNm(),(String) excelData.get(0));
 		Log.info("Edit Store Table Name");
 		act.click1(objMngStore.btnEditStoreTblSubmit(), "Edit StoreTbl Submit");
 		Log.info("Store Table is Edited");

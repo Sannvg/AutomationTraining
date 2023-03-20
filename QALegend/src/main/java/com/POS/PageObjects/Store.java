@@ -77,8 +77,7 @@ public class Store extends BaseClass {
 		return txtSearchStore;
 	}
 
-	public WebElement tableStore() {
-		act.fluentWait(getDriver(), objStore.tableStore(), 5);
+	public WebElement tableStore() {		
 		return tblStores;
 	}
 

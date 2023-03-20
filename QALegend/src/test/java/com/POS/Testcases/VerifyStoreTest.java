@@ -98,7 +98,7 @@ public class VerifyStoreTest extends BaseClass {
 	}
 
 	@Test(priority = 4)
-	public void validateEditStore() {
+	public void validateEditStore() throws Exception {
 		Log.startTestCase("VerifyStoreTest--validateEditStore");
 		objLogin.loginFn();
 		act.click1(objHome.menuStore(), "Store Menu");
@@ -106,12 +106,14 @@ public class VerifyStoreTest extends BaseClass {
 		act.type(objStore.txtSearchStore(), "Test OBS Store");	
 		Log.info("Clicked on Edit Store");
 		act.click1(objStore.btneditStore(), "Edit Store");
-		act.type(objStore.storeName(), "OBS Store");
-		act.type(objStore.storePhone(), "123123");
+		ExcelRead data = new ExcelRead();
+		ArrayList excelData = data.getData("EStore");
+		act.type(objStore.storeName(), (String) excelData.get(0));
+		act.type(objStore.storePhone(), (String) excelData.get(1));
 		Log.info("Edit Store Details entered");
 		act.click1(objStore.storeAddSubmit(), "Edit Store Submit");		
 		act.click1(objStore.txtSearchStore(), "Search Store");
-		act.type(objStore.txtSearchStore(), "OBS Store");
+		act.type(objStore.txtSearchStore(),(String) excelData.get(0));
 		Assert.assertTrue(objStore.firstElement().isDisplayed(), "Store is Updated");
 		objHome.logOutFn();
 		Log.endTestCase("VerifyStoreTest--validateEditStore");

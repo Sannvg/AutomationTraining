@@ -1,56 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [RestaurantSuite]">
-  <parameter name="ZoneName" value="Test OBS Zone"/>
-  <parameter name="StoreTblNm" value="Test OBS Store Table"/>
+<suite name="Failed suite [RestaurantSuite]" guice-stage="DEVELOPMENT" verbose="0">
   <parameter name="Browser" value="Edge"/>
   <listeners>
     <listener class-name="com.POS.Utilities.Listeners"/>
+    <listener class-name="com.POS.Utilities.RetryAnalyzerListener"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)">
+  <test thread-count="5" name="SmokeTest(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.POS.Testcases.VerifySettingsTest">
+      <class name="com.POS.Testcases.VerifyHomePageTest">
         <methods>
           <include name="beforeMethods"/>
           <include name="loadFiles"/>
+          <include name="validateMenuClick"/>
           <include name="loadConfig"/>
           <include name="afterMethod"/>
-          <include name="tearDown"/>
-          <include name="validateAddUser"/>
         </methods>
-      </class> <!-- com.POS.Testcases.VerifySettingsTest -->
-      <class name="com.POS.Testcases.VerifyWaiterTest">
-        <methods>
-          <include name="beforeMethods"/>
-          <include name="loadFiles"/>
-          <include name="loadConfig"/>
-          <include name="validateEditWaiter"/>
-          <include name="afterMethod"/>
-          <include name="validateAddWaiter"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.POS.Testcases.VerifyWaiterTest -->
-      <class name="com.POS.Testcases.VerifyStoreTest">
-        <methods>
-          <include name="validateEditStore"/>
-          <include name="beforeMethods"/>
-          <include name="loadFiles"/>
-          <include name="loadConfig"/>
-          <include name="afterMethod"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.POS.Testcases.VerifyStoreTest -->
-      <class name="com.POS.Testcases.VerifyProductPageTest">
-        <methods>
-          <include name="beforeMethods"/>
-          <include name="loadFiles"/>
-          <include name="loadConfig"/>
-          <include name="validateFilterBySupplier"/>
-          <include name="validateFilterByPdtType"/>
-          <include name="afterMethod"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.POS.Testcases.VerifyProductPageTest -->
+      </class> <!-- com.POS.Testcases.VerifyHomePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [RestaurantSuite] -->
