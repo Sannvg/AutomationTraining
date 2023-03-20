@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestaurantSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="ZoneName" value="Test OBS Zone"/>
+  <parameter name="StoreTblNm" value="Test OBS Store Table"/>
+  <parameter name="Browser" value="Edge"/>
+  <listeners>
+    <listener class-name="com.POS.Utilities.Listeners"/>
+    <listener class-name="com.POS.Utilities.RetryAnalyzerListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.POS.Testcases.VerifyHomePageTest">
+        <methods>
+          <include name="beforeMethods"/>
+          <include name="loadFiles"/>
+          <include name="validateMenuClick"/>
+          <include name="loadConfig"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.POS.Testcases.VerifyHomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RestaurantSuite] -->

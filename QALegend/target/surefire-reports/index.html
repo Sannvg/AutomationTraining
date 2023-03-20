@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RestaurantSuite">
+              <span class="suite-name border-failed">RestaurantSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RestaurantSuite">
+                    <span>D:\ObsquraTraining\QALegend\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RestaurantSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RestaurantSuite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RestaurantSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RestaurantSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RestaurantSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RestaurantSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">37 methods, 6 failed,   31 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RestaurantSuite" class="hide-methods failed suite-RestaurantSuite"> (hide)</a> <!-- hide-methods failed suite-RestaurantSuite -->
+                      <a href="#" panel-name="suite-RestaurantSuite" class="show-methods failed suite-RestaurantSuite"> (show)</a> <!-- show-methods failed suite-RestaurantSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-RestaurantSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifySettingsTest" hash-for-method="validateAddUser">validateAddUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyWaiterTest" hash-for-method="validateAddWaiter">validateAddWaiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreTest" hash-for-method="validateEditStore">validateEditStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyWaiterTest" hash-for-method="validateEditWaiter">validateEditWaiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateFilterByPdtType">validateFilterByPdtType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateFilterBySupplier">validateFilterBySupplier</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RestaurantSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RestaurantSuite" class="hide-methods passed suite-RestaurantSuite"> (hide)</a> <!-- hide-methods passed suite-RestaurantSuite -->
+                      <a href="#" panel-name="suite-RestaurantSuite" class="show-methods passed suite-RestaurantSuite"> (show)</a> <!-- show-methods passed suite-RestaurantSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-RestaurantSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyCategoryTest" hash-for-method="validateAddCategory">validateAddCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateAddProduct">validateAddProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreTest" hash-for-method="validateAddStore">validateAddStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreManageTest" hash-for-method="validateAddStoreTable(Test OBS Store Table)">validateAddStoreTable(Test OBS Store Table)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreManageTest" hash-for-method="validateAddZone(Test OBS Zone)">validateAddZone(Test OBS Zone)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyUserLoginTest" hash-for-method="validateAllLogin(InvalidUn, password)">validateAllLogin(InvalidUn, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyUserLoginTest" hash-for-method="validateAllLogin(InvalidUn, InvalidPw)">validateAllLogin(InvalidUn, InvalidPw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyUserLoginTest" hash-for-method="validateAllLogin(Admin, InvalidPw)">validateAllLogin(Admin, InvalidPw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyCategoryTest" hash-for-method="validateCatTblHeaders">validateCatTblHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreManageTest" hash-for-method="validateDeleteStore">validateDeleteStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreManageTest" hash-for-method="validateDeleteStoreTbl">validateDeleteStoreTbl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreManageTest" hash-for-method="validateDeleteZone">validateDeleteZone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateDownloadCSV">validateDownloadCSV</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreManageTest" hash-for-method="validateEditStoreTable">validateEditStoreTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreManageTest" hash-for-method="validateEditZone">validateEditZone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyHomePageTest" hash-for-method="validateElementsDisplay">validateElementsDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateFilterBySupPdtType">validateFilterBySupPdtType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyHomePageTest" hash-for-method="validateLanguageSelection">validateLanguageSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyUserLoginTest" hash-for-method="validateLogin">validateLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyHomePageTest" hash-for-method="validateMenuClick">validateMenuClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyHomePageTest" hash-for-method="validateMenuDisplay">validateMenuDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validatePrintMenu">validatePrintMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateSearchPdt">validateSearchPdt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreTest" hash-for-method="validateSearchStore">validateSearchStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyWaiterTest" hash-for-method="validateSearchWaiter">validateSearchWaiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreTest" hash-for-method="validateShowCount">validateShowCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyWaiterTest" hash-for-method="validateShowCount">validateShowCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateShowPdtTblCount">validateShowPdtTblCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreTest" hash-for-method="validateStoreSorting">validateStoreSorting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyStoreTest" hash-for-method="validateTableHeaders">validateTableHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestaurantSuite" title="com.POS.Testcases.VerifyProductPageTest" hash-for-method="validateUploadCSV">validateUploadCSV</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RestaurantSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RestaurantSuite" class="panel RestaurantSuite">
+          <div class="suite-RestaurantSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifySettingsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddUser">
+                  </a> <!-- validateAddUser -->
+                  <span class="method-name">validateAddUser</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#users&apos;]&quot;}
+  (Session info: MicrosoftEdge=111.0.1661.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f70a51a769690ce6eaf3c5192c644c4f, findElement {using=xpath, value=//a[@href=&apos;#users&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.43, ms:edgeOptions: {debuggerAddress: localhost:50543}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\Thomas\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50543/devtoo..., se:cdpVersion: 111.0.1661.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f70a51a769690ce6eaf3c5192c644c4f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at com.POS.Testcases.VerifySettingsTest.validateAddUser(VerifySettingsTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-failed -->
+          <div class="suite-RestaurantSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyWaiterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddWaiter">
+                  </a> <!-- validateAddWaiter -->
+                  <span class="method-name">validateAddWaiter</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@data-target=&apos;#AddWaiter&apos;]&quot;}
+  (Session info: MicrosoftEdge=111.0.1661.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [980a61c69f87ad19a56ae93ef8b95a95, findElement {using=xpath, value=//button[@data-target=&apos;#AddWaiter&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.43, ms:edgeOptions: {debuggerAddress: localhost:50235}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\Thomas\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50235/devtoo..., se:cdpVersion: 111.0.1661.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 980a61c69f87ad19a56ae93ef8b95a95
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at com.POS.Testcases.VerifyWaiterTest.validateAddWaiter(VerifyWaiterTest.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEditWaiter">
+                  </a> <!-- validateEditWaiter -->
+                  <span class="method-name">validateEditWaiter</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;table[id=&apos;Table&apos;]&quot;}
+  (Session info: MicrosoftEdge=111.0.1661.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [15886bb2a8a612e88a13108db259a3a5, findElement {using=css selector, value=table[id=&apos;Table&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.43, ms:edgeOptions: {debuggerAddress: localhost:50345}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\Thomas\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50345/devtoo..., se:cdpVersion: 111.0.1661.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15886bb2a8a612e88a13108db259a3a5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.findElements(Unknown Source)
+	at com.POS.Actions.Action.getRowCount(Action.java:580)
+	at com.POS.Testcases.VerifyWaiterTest.validateEditWaiter(VerifyWaiterTest.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-failed -->
+          <div class="suite-RestaurantSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyStoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEditStore">
+                  </a> <!-- validateEditStore -->
+                  <span class="method-name">validateEditStore</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: select[name=&apos;Table_length&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.POS.Actions.Action.explicitWait(Action.java:698)
+	at com.POS.Testcases.VerifyStoreTest.validateEditStore(VerifyStoreTest.java:115)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;select[name=&apos;Table_length&apos;]&quot;}
+  (Session info: MicrosoftEdge=111.0.1661.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7dc219d3db298c59a1cc2798c22541b4, findElement {using=css selector, value=select[name=&apos;Table_length&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.43, ms:edgeOptions: {debuggerAddress: localhost:49743}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\Thomas\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49743/devtoo..., se:cdpVersion: 111.0.1661.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7dc219d3db298c59a1cc2798c22541b4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 34 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-failed -->
+          <div class="suite-RestaurantSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyProductPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFilterByPdtType">
+                  </a> <!-- validateFilterByPdtType -->
+                  <span class="method-name">validateFilterByPdtType</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;table[id=&apos;Table&apos;]&quot;}
+  (Session info: MicrosoftEdge=111.0.1661.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [37ae1db6ab900fee4af30af8be3fddeb, findElement {using=css selector, value=table[id=&apos;Table&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.43, ms:edgeOptions: {debuggerAddress: localhost:49173}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\Thomas\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49173/devtoo..., se:cdpVersion: 111.0.1661.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37ae1db6ab900fee4af30af8be3fddeb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.findElements(Unknown Source)
+	at com.POS.Actions.Action.getRowCount(Action.java:580)
+	at com.POS.Testcases.VerifyProductPageTest.validateFilterByPdtType(VerifyProductPageTest.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFilterBySupplier">
+                  </a> <!-- validateFilterBySupplier -->
+                  <span class="method-name">validateFilterBySupplier</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;table[id=&apos;Table&apos;]&quot;}
+  (Session info: MicrosoftEdge=111.0.1661.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [72a60eb75ad6a528f0f1d3be38e8bb79, findElement {using=css selector, value=table[id=&apos;Table&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.43, ms:edgeOptions: {debuggerAddress: localhost:65487}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\Thomas\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65487/devtoo..., se:cdpVersion: 111.0.1661.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72a60eb75ad6a528f0f1d3be38e8bb79
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.findElements(Unknown Source)
+	at com.POS.Actions.Action.getRowCount(Action.java:580)
+	at com.POS.Testcases.VerifyProductPageTest.validateFilterBySupplier(VerifyProductPageTest.java:41)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-failed -->
+          <div class="suite-RestaurantSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddCategory">
+                  </a> <!-- validateAddCategory -->
+                  <span class="method-name">validateAddCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCatTblHeaders">
+                  </a> <!-- validateCatTblHeaders -->
+                  <span class="method-name">validateCatTblHeaders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-passed -->
+          <div class="suite-RestaurantSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyStoreManageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddStoreTable(Test OBS Store Table)">
+                  </a> <!-- validateAddStoreTable(Test OBS Store Table) -->
+                  <span class="method-name">validateAddStoreTable</span>
+                  <span class="parameters">(Test OBS Store Table)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddZone(Test OBS Zone)">
+                  </a> <!-- validateAddZone(Test OBS Zone) -->
+                  <span class="method-name">validateAddZone</span>
+                  <span class="parameters">(Test OBS Zone)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDeleteStore">
+                  </a> <!-- validateDeleteStore -->
+                  <span class="method-name">validateDeleteStore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDeleteStoreTbl">
+                  </a> <!-- validateDeleteStoreTbl -->
+                  <span class="method-name">validateDeleteStoreTbl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDeleteZone">
+                  </a> <!-- validateDeleteZone -->
+                  <span class="method-name">validateDeleteZone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEditStoreTable">
+                  </a> <!-- validateEditStoreTable -->
+                  <span class="method-name">validateEditStoreTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEditZone">
+                  </a> <!-- validateEditZone -->
+                  <span class="method-name">validateEditZone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-passed -->
+          <div class="suite-RestaurantSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyUserLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAllLogin(InvalidUn, password)">
+                  </a> <!-- validateAllLogin(InvalidUn, password) -->
+                  <span class="method-name">validateAllLogin</span>
+                  <span class="parameters">(InvalidUn, password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAllLogin(InvalidUn, InvalidPw)">
+                  </a> <!-- validateAllLogin(InvalidUn, InvalidPw) -->
+                  <span class="method-name">validateAllLogin</span>
+                  <span class="parameters">(InvalidUn, InvalidPw)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAllLogin(Admin, InvalidPw)">
+                  </a> <!-- validateAllLogin(Admin, InvalidPw) -->
+                  <span class="method-name">validateAllLogin</span>
+                  <span class="parameters">(Admin, InvalidPw)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogin">
+                  </a> <!-- validateLogin -->
+                  <span class="method-name">validateLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-passed -->
+          <div class="suite-RestaurantSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateElementsDisplay">
+                  </a> <!-- validateElementsDisplay -->
+                  <span class="method-name">validateElementsDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLanguageSelection">
+                  </a> <!-- validateLanguageSelection -->
+                  <span class="method-name">validateLanguageSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMenuClick">
+                  </a> <!-- validateMenuClick -->
+                  <span class="method-name">validateMenuClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMenuDisplay">
+                  </a> <!-- validateMenuDisplay -->
+                  <span class="method-name">validateMenuDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-passed -->
+          <div class="suite-RestaurantSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyWaiterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchWaiter">
+                  </a> <!-- validateSearchWaiter -->
+                  <span class="method-name">validateSearchWaiter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateShowCount">
+                  </a> <!-- validateShowCount -->
+                  <span class="method-name">validateShowCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-passed -->
+          <div class="suite-RestaurantSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyStoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddStore">
+                  </a> <!-- validateAddStore -->
+                  <span class="method-name">validateAddStore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchStore">
+                  </a> <!-- validateSearchStore -->
+                  <span class="method-name">validateSearchStore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateShowCount">
+                  </a> <!-- validateShowCount -->
+                  <span class="method-name">validateShowCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStoreSorting">
+                  </a> <!-- validateStoreSorting -->
+                  <span class="method-name">validateStoreSorting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTableHeaders">
+                  </a> <!-- validateTableHeaders -->
+                  <span class="method-name">validateTableHeaders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-passed -->
+          <div class="suite-RestaurantSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POS.Testcases.VerifyProductPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddProduct">
+                  </a> <!-- validateAddProduct -->
+                  <span class="method-name">validateAddProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDownloadCSV">
+                  </a> <!-- validateDownloadCSV -->
+                  <span class="method-name">validateDownloadCSV</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFilterBySupPdtType">
+                  </a> <!-- validateFilterBySupPdtType -->
+                  <span class="method-name">validateFilterBySupPdtType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePrintMenu">
+                  </a> <!-- validatePrintMenu -->
+                  <span class="method-name">validatePrintMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchPdt">
+                  </a> <!-- validateSearchPdt -->
+                  <span class="method-name">validateSearchPdt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateShowPdtTblCount">
+                  </a> <!-- validateShowPdtTblCount -->
+                  <span class="method-name">validateShowPdtTblCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUploadCSV">
+                  </a> <!-- validateUploadCSV -->
+                  <span class="method-name">validateUploadCSV</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestaurantSuite-class-passed -->
+        </div> <!-- panel RestaurantSuite -->
+        <div panel-name="test-xml-RestaurantSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\ObsquraTraining\QALegend\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;RestaurantSuite&quot;&gt;
+  &lt;parameter name=&quot;ZoneName&quot; value=&quot;Test OBS Zone&quot;/&gt;
+  &lt;parameter name=&quot;StoreTblNm&quot; value=&quot;Test OBS Store Table&quot;/&gt;
+  &lt;parameter name=&quot;Browser&quot; value=&quot;Edge&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.POS.Utilities.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifyUserLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifyHomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifyProductPageTest&quot;/&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifyStoreTest&quot;/&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifyStoreManageTest&quot;/&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifyWaiterTest&quot;/&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifyCategoryTest&quot;/&gt;
+      &lt;class name=&quot;com.POS.Testcases.VerifySettingsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- RestaurantSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RestaurantSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RestaurantSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RestaurantSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RestaurantSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateElementsDisplay</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateLanguageSelection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateMenuClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateMenuDisplay</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateShowPdtTblCount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateTableHeaders</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RestaurantSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RestaurantSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RestaurantSuite');
+function tableData_RestaurantSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(37);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateEditWaiter')
+data.setCell(0, 2, 'com.POS.Testcases.VerifyWaiterTest')
+data.setCell(0, 3, 164322);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateAddUser')
+data.setCell(1, 2, 'com.POS.Testcases.VerifySettingsTest')
+data.setCell(1, 3, 162164);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateEditStore')
+data.setCell(2, 2, 'com.POS.Testcases.VerifyStoreTest')
+data.setCell(2, 3, 144335);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateAddWaiter')
+data.setCell(3, 2, 'com.POS.Testcases.VerifyWaiterTest')
+data.setCell(3, 3, 112441);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateCatTblHeaders')
+data.setCell(4, 2, 'com.POS.Testcases.VerifyCategoryTest')
+data.setCell(4, 3, 73268);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateFilterBySupplier')
+data.setCell(5, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(5, 3, 72457);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateFilterByPdtType')
+data.setCell(6, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(6, 3, 71651);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateAddProduct')
+data.setCell(7, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(7, 3, 36332);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateMenuDisplay')
+data.setCell(8, 2, 'com.POS.Testcases.VerifyHomePageTest')
+data.setCell(8, 3, 32194);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateFilterBySupPdtType')
+data.setCell(9, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(9, 3, 20261);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateMenuClick')
+data.setCell(10, 2, 'com.POS.Testcases.VerifyHomePageTest')
+data.setCell(10, 3, 16715);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateShowCount')
+data.setCell(11, 2, 'com.POS.Testcases.VerifyStoreTest')
+data.setCell(11, 3, 15264);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateLogin')
+data.setCell(12, 2, 'com.POS.Testcases.VerifyUserLoginTest')
+data.setCell(12, 3, 14392);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validatePrintMenu')
+data.setCell(13, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(13, 3, 13669);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateShowPdtTblCount')
+data.setCell(14, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(14, 3, 12308);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateUploadCSV')
+data.setCell(15, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(15, 3, 12017);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateAddZone')
+data.setCell(16, 2, 'com.POS.Testcases.VerifyStoreManageTest')
+data.setCell(16, 3, 9107);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateDownloadCSV')
+data.setCell(17, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(17, 3, 8909);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validateEditStoreTable')
+data.setCell(18, 2, 'com.POS.Testcases.VerifyStoreManageTest')
+data.setCell(18, 3, 8872);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validateAddStoreTable')
+data.setCell(19, 2, 'com.POS.Testcases.VerifyStoreManageTest')
+data.setCell(19, 3, 8738);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateEditZone')
+data.setCell(20, 2, 'com.POS.Testcases.VerifyStoreManageTest')
+data.setCell(20, 3, 8678);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validateAddStore')
+data.setCell(21, 2, 'com.POS.Testcases.VerifyStoreTest')
+data.setCell(21, 3, 8580);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validateSearchPdt')
+data.setCell(22, 2, 'com.POS.Testcases.VerifyProductPageTest')
+data.setCell(22, 3, 7988);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validateDeleteStore')
+data.setCell(23, 2, 'com.POS.Testcases.VerifyStoreManageTest')
+data.setCell(23, 3, 7781);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'validateAddCategory')
+data.setCell(24, 2, 'com.POS.Testcases.VerifyCategoryTest')
+data.setCell(24, 3, 7557);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'validateDeleteStoreTbl')
+data.setCell(25, 2, 'com.POS.Testcases.VerifyStoreManageTest')
+data.setCell(25, 3, 7495);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'validateDeleteZone')
+data.setCell(26, 2, 'com.POS.Testcases.VerifyStoreManageTest')
+data.setCell(26, 3, 6700);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'validateStoreSorting')
+data.setCell(27, 2, 'com.POS.Testcases.VerifyStoreTest')
+data.setCell(27, 3, 6570);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validateShowCount')
+data.setCell(28, 2, 'com.POS.Testcases.VerifyWaiterTest')
+data.setCell(28, 3, 6177);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'validateLanguageSelection')
+data.setCell(29, 2, 'com.POS.Testcases.VerifyHomePageTest')
+data.setCell(29, 3, 5995);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'validateSearchStore')
+data.setCell(30, 2, 'com.POS.Testcases.VerifyStoreTest')
+data.setCell(30, 3, 5980);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'validateSearchWaiter')
+data.setCell(31, 2, 'com.POS.Testcases.VerifyWaiterTest')
+data.setCell(31, 3, 5607);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'validateTableHeaders')
+data.setCell(32, 2, 'com.POS.Testcases.VerifyStoreTest')
+data.setCell(32, 3, 5373);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validateElementsDisplay')
+data.setCell(33, 2, 'com.POS.Testcases.VerifyHomePageTest')
+data.setCell(33, 3, 4397);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validateAllLogin')
+data.setCell(34, 2, 'com.POS.Testcases.VerifyUserLoginTest')
+data.setCell(34, 3, 1684);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'validateAllLogin')
+data.setCell(35, 2, 'com.POS.Testcases.VerifyUserLoginTest')
+data.setCell(35, 3, 1618);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'validateAllLogin')
+data.setCell(36, 2, 'com.POS.Testcases.VerifyUserLoginTest')
+data.setCell(36, 3, 1461);
+window.suiteTableData['RestaurantSuite']= { tableData: data, tableDiv: 'times-div-RestaurantSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 minutes</span>
+              <div id="times-div-RestaurantSuite">
+              </div> <!-- times-div-RestaurantSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RestaurantSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RestaurantSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RestaurantSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">21 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POS.Testcases.VerifyCategoryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">loadFiles</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POS.Testcases.VerifyStoreManageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loadFiles</span>
+                <br/>
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POS.Testcases.VerifySettingsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">loadFiles</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POS.Testcases.VerifyHomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">loadFiles</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POS.Testcases.VerifyWaiterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">loadFiles</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POS.Testcases.VerifyProductPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">loadFiles</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POS.Testcases.VerifyStoreTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loadFiles</span>
+                <br/>
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RestaurantSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyUserLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">loadFiles</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">loadConfig</span>
+                <span class="method-start">1036 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">1107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogin</span>
+                <span class="method-start">66524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">80983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">87044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAllLogin(InvalidUn, InvalidPw)</span>
+                <span class="method-start">106498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">107960 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">108875 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAllLogin(Admin, InvalidPw)</span>
+                <span class="method-start">122565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">124250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">125096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAllLogin(InvalidUn, password)</span>
+                <span class="method-start">133931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">135550 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyHomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">136353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateElementsDisplay</span>
+                <span class="method-start">147476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">151876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">152684 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLanguageSelection</span>
+                <span class="method-start">162748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">168744 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">169528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMenuDisplay</span>
+                <span class="method-start">180876 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">213072 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">213798 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMenuClick</span>
+                <span class="method-start">220083 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">236799 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">237871 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateShowPdtTblCount</span>
+                <span class="method-start">246360 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">258672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">259584 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateFilterBySupplier</span>
+                <span class="method-start">267231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">340171 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">341275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateFilterByPdtType</span>
+                <span class="method-start">346436 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">418197 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">419047 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateFilterBySupPdtType</span>
+                <span class="method-start">425423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">445686 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">446687 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDownloadCSV</span>
+                <span class="method-start">454896 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">463808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">464631 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUploadCSV</span>
+                <span class="method-start">471478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">483496 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">484247 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatePrintMenu</span>
+                <span class="method-start">490907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">504577 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">505399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddProduct</span>
+                <span class="method-start">513489 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">549822 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">550651 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchPdt</span>
+                <span class="method-start">557016 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">565005 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyStoreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">565782 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTableHeaders</span>
+                <span class="method-start">571282 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">576656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">577409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateShowCount</span>
+                <span class="method-start">583467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">598733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">599519 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddStore</span>
+                <span class="method-start">604829 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">613409 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">614168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchStore</span>
+                <span class="method-start">619160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">625141 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">625912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateEditStore</span>
+                <span class="method-start">631733 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">776272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">777231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateStoreSorting</span>
+                <span class="method-start">782851 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">789422 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyStoreManageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">790274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddZone(Test OBS Zone)</span>
+                <span class="method-start">795455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">804562 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">805306 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEditZone</span>
+                <span class="method-start">810615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">819294 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">820007 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddStoreTable(Test OBS Store Table)</span>
+                <span class="method-start">824707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">833446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">834221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEditStoreTable</span>
+                <span class="method-start">839922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">848795 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">849548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDeleteStoreTbl</span>
+                <span class="method-start">854217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">861713 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">862439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDeleteZone</span>
+                <span class="method-start">867379 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">874079 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">874820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDeleteStore</span>
+                <span class="method-start">879611 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">887393 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyWaiterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">888208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateShowCount</span>
+                <span class="method-start">894494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">900672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">901413 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAddWaiter</span>
+                <span class="method-start">906306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1018916 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">1019932 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchWaiter</span>
+                <span class="method-start">1024610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1030218 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">1031131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateEditWaiter</span>
+                <span class="method-start">1036283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1201398 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">1202399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCatTblHeaders</span>
+                <span class="method-start">1210738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1284007 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">1284967 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddCategory</span>
+                <span class="method-start">1290754 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1298312 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifySettingsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethods(Edge)</span>
+                <span class="method-start">1299061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAddUser</span>
+                <span class="method-start">1303953 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1466219 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POS.Testcases.VerifyUserLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1467285 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

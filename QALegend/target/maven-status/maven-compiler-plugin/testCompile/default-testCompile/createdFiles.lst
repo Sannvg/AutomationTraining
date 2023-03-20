@@ -1,0 +1,8 @@
+com\POS\Testcases\VerifySettingsTest.class
+com\POS\Testcases\VerifyHomePageTest.class
+com\POS\Testcases\VerifyStoreManageTest.class
+com\POS\Testcases\VerifyWaiterTest.class
+com\POS\Testcases\VerifyCategoryTest.class
+com\POS\Testcases\VerifyStoreTest.class
+com\POS\Testcases\VerifyProductPageTest.class
+com\POS\Testcases\VerifyUserLoginTest.class
