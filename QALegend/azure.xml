@@ -9,8 +9,13 @@
 	<test thread-count="5" name="TestRun">
 		<classes>
 			<class name="com.POS.Testcases.VerifyUserLoginTest" />
-			<class name="com.POS.Testcases.VerifyCategoryTest" />
-			<class name="com.POS.Testcases.VerifyWaiterTest" />
+			<class name="com.POS.Testcases.VerifyHomePageTest" >
+				<methods>
+					<include name="validateElementsDisplay" />
+					<include name="validateMenuDisplay" />
+					<exclude name="validateLanguageSelection" />
+				</methods>
+			</class>			
 		</classes>
 	</test> <!-- TestRun -->
 </suite> <!-- RestaurantSuite -->

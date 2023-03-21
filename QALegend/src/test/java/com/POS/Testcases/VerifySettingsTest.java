@@ -15,7 +15,6 @@ public class VerifySettingsTest extends BaseClass {
 		act.click1(objHome.menuSettings(), "Settings Menu");
 		act.click1(objSettings.btnUsers(), "Users");
 		act.click1(objSettings.btnAddUser(), "Add User");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("User");
 		act.type(objSettings.txtUserName(), (String) excelData.get(0));
 		act.type(objSettings.txtFirstNm(), (String) excelData.get(1));

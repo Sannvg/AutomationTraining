@@ -62,7 +62,6 @@ public class VerifyStoreTest extends BaseClass {
 		objLogin.loginFn();
 		act.click1(objHome.menuStore(), "Store Menu");
 		act.click1(objStore.btnAddStore(), "Add Store");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("Store");
 		act.type(objStore.storeName(), (String) excelData.get(0));
 		act.type(objStore.storeEmail(), (String) excelData.get(1));
@@ -106,7 +105,6 @@ public class VerifyStoreTest extends BaseClass {
 		act.type(objStore.txtSearchStore(), "Test OBS Store");	
 		Log.info("Clicked on Edit Store");
 		act.click1(objStore.btneditStore(), "Edit Store");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("EStore");
 		act.type(objStore.storeName(), (String) excelData.get(0));
 		act.type(objStore.storePhone(), (String) excelData.get(1));

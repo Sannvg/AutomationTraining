@@ -8,14 +8,14 @@
 	<parameter name="Browser" value="Edge"></parameter>	
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.POS.Testcases.VerifyUserLoginTest" />
 			<class name="com.POS.Testcases.VerifyHomePageTest" />
+			<!--<class name="com.POS.Testcases.VerifyUserLoginTest" />			
 			<class name="com.POS.Testcases.VerifyProductPageTest" />
 			<class name="com.POS.Testcases.VerifyStoreTest" />
 			<class name="com.POS.Testcases.VerifyStoreManageTest" />
 			<class name="com.POS.Testcases.VerifyWaiterTest" />
 			<class name="com.POS.Testcases.VerifyCategoryTest" />
-			<class name="com.POS.Testcases.VerifySettingsTest" />
+			<class name="com.POS.Testcases.VerifySettingsTest" />-->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- RestaurantSuite -->

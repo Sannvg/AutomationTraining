@@ -125,7 +125,6 @@ public class VerifyProductPageTest extends BaseClass {
 		objLogin.loginFn();
 		act.click1(objHome.menuPdt(), "Product Menu");
 		act.click1(objPdt.btnAddPdt(), "Add Product");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("Product");
 		act.selectByValue(objAddPdt.drpPdtType(), (String) excelData.get(0));
 		act.type(objAddPdt.txtPdtCode(), (String) excelData.get(1));
@@ -156,7 +155,6 @@ public class VerifyProductPageTest extends BaseClass {
 		objLogin.loginFn();
 		act.click1(objHome.menuPdt(), "Product Menu");
 		act.click1(objPdt.txtSearchPdt(), "Search Product");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("Product");
 		act.type(objPdt.txtSearchPdt(), (String) excelData.get(2));
 		Log.info("Search product entered");

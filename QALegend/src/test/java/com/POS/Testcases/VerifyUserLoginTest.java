@@ -1,9 +1,12 @@
 package com.POS.Testcases;
 
+import java.util.ArrayList;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.POS.BaseClass.BaseClass;
+import com.POS.Utilities.ExcelRead;
 import com.POS.Utilities.Log;
 
 public class VerifyUserLoginTest extends BaseClass {
@@ -30,14 +33,16 @@ public class VerifyUserLoginTest extends BaseClass {
 	}
 
 	@DataProvider
-	public Object[][] getLoginUsers() {
+	public Object[][] getLoginUsers()  throws Exception {
 		Object[][] logindata = new Object[3][2];
-		logindata[0][0] = "InvalidUn";
-		logindata[0][1] = "InvalidPw";
-		logindata[1][0] = "Admin";
-		logindata[1][1] = "InvalidPw";
-		logindata[2][0] = "InvalidUn";
-		logindata[2][1] = "password";
+		ExcelRead data = new ExcelRead();
+		ArrayList excelData = data.getData("InvalidUser");		
+		logindata[0][0] = excelData.get(0);
+		logindata[0][1] = excelData.get(1);
+		logindata[1][0] = excelData.get(2);
+		logindata[1][1] = excelData.get(1);
+		logindata[2][0] = excelData.get(0);
+		logindata[2][1] = excelData.get(3);
 		return logindata;
 	}
 

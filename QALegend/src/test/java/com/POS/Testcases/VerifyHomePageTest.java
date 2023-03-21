@@ -2,6 +2,8 @@ package com.POS.Testcases;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -34,7 +36,8 @@ public class VerifyHomePageTest extends BaseClass {
 		act.click1(objHome.languageSelected(), "Language Dropdown");
 		objHome.languageSelection(" Spanish");		
 		Log.info("Home Page Menu Check");
-		act.click1(objHome.languageSelected(), "Language DropDown");
+		JavascriptExecutor objJSE = (JavascriptExecutor)getDriver();
+		objJSE.executeScript("arguments[0].click()", objHome.languageSelected());	
 		objHome.languageSelection(" English");
 		Assert.assertTrue(objHome.languageSelected().isDisplayed());
 		objHome.logOutFn();

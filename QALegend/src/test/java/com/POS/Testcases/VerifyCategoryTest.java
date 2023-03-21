@@ -46,7 +46,6 @@ public class VerifyCategoryTest extends BaseClass {
 		act.click1(objHome.menuCategory(), "Category Menu");
 		act.click1(objHome.menuCatPdt(), "Category Pdt");
 		act.click1(objCategory.btnAddCat(), "Add Category");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("Category");
 		act.type(objCategory.txtCatName(), (String) excelData.get(0));
 		act.click1(objCategory.btnSubmitAddCat(), "Add Category Submit");

@@ -17,7 +17,6 @@ public class VerifyStoreManageTest extends BaseClass {
 		objMngStore.beforefn();
 		act.click1(objMngStore.btnaddZone(), "Add Zone");
 		act.click1(objMngStore.AddZoneName(), "Zone Name");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("Zone");
 		act.type(objMngStore.AddZoneName(), (String) excelData.get(0));
 		Log.info("Entered Zone");
@@ -32,7 +31,6 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.startTestCase("VerifyStoreManageTest-validateEditZone");
 		objMngStore.beforefn();
 		act.click1(objMngStore.btnEditZone(), "Edit Zone");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("EZone");
 		act.click1(objMngStore.editZoneName(), "Edit Zone Name");
 		act.type(objMngStore.editZoneName(), (String) excelData.get(0));
@@ -48,7 +46,6 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.startTestCase("VerifyStoreManageTest-validateAddStoreTable");
 		objMngStore.beforefn();
 		act.click1(objMngStore.btnaddStoreTable(), "Add Store Table");
-		ExcelRead data = new ExcelRead();
 		ArrayList excelData = data.getData("StoreTable");
 		act.click1(objMngStore.txtAddStoreTblNm(), "Store Table Name");
 		act.type(objMngStore.txtAddStoreTblNm(), (String) excelData.get(0));
@@ -65,7 +62,7 @@ public class VerifyStoreManageTest extends BaseClass {
 	@Test(priority = 4)
 	public void validateEditStoreTable() throws Exception {
 		Log.startTestCase("VerifyStoreManageTest-validateEditStoreTable");
-		objMngStore.beforefn();ExcelRead data = new ExcelRead();
+		objMngStore.beforefn();
 		ArrayList excelData = data.getData("EStoreTable");
 		act.click1(objMngStore.btnStrTblEdit(), "Store Table Edit");
 		act.type(objMngStore.txtAddStoreTblNm(),(String) excelData.get(0));

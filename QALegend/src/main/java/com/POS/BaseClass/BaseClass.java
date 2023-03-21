@@ -30,12 +30,14 @@ import com.POS.PageObjects.StoreManage;
 import com.POS.PageObjects.Supplier;
 import com.POS.PageObjects.Waiter;
 import com.POS.PageObjects.Category;
+import com.POS.Utilities.ExcelRead;
 import com.POS.Utilities.ExtentReport;
 
 public class BaseClass {
 	public static Properties prop;
 	public static Action act;
 	public static ExtentReport ext;
+	public static ExcelRead data;
 	public static Login objLogin;
 	public static HomePage objHome;
 	public static Product objPdt;
@@ -75,8 +77,9 @@ public class BaseClass {
 	@BeforeMethod(groups = { "Smoke" })
 	public void beforeMethods(String strBrowser) {
 		launchApp(strBrowser);
+		data= new ExcelRead();
 		objLogin = new Login();
-		objHome = new HomePage();
+		objHome = new HomePage();		
 		objPdt = new Product();
 		objAddPdt = new AddProduct();
 		objStore = new Store();
@@ -86,7 +89,7 @@ public class BaseClass {
 		objSupplier = new Supplier();
 		objEditPeople = new EditPeople();
 		objCategory = new Category();
-		objSettings = new Settings();
+		objSettings = new Settings();		
 	}
 
 	public static WebDriver getDriver() {
